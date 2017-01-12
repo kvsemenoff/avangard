@@ -56,7 +56,7 @@ get_header(); ?>
 
     <script type="text/javascript">
         $( document ).ready(function() {
-            var MIN_WIDTH = 600;
+            var MIN_WIDTH = 900;
 
             var set_width = function () {
                 var width = $(window).width();
@@ -64,6 +64,10 @@ get_header(); ?>
                 if (width < MIN_WIDTH) {
                     $('.advantage').width('100%');
                     $('.recommended').width('100%');
+                    $('.advantage').css('margin-left', '5%');
+                    $('.recommended').css('margin-left', '5%');
+                    $('.advantage').css('margin-left', '5%');
+                    $('.recommended').css('margin-left', '5%');
                 } else {
                     $('.advantage').width('37%');
                     $('.recommended').width('37%');                    
