@@ -629,13 +629,8 @@ footer .footer_bottom {
     padding: 40px 0 30px 0;
 }
 footer .footer_bottom .studio {
-    *zoom: 1;
-    float: left;
-    clear: none;
-    text-align: inherit;
-    width: 33.33333333333333%;
-    margin-left: 8.333333333333332%;
-    margin-right: 0%;
+
+   text-align: center;
     color: #666;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
@@ -653,13 +648,8 @@ footer .footer_bottom .studio a {
     text-decoration: none;
 }
 footer .footer_bottom .tel {
-    *zoom: 1;
-    float: left;
-    clear: none;
-    text-align: inherit;
-    width: 25%;
-    margin-left: 0%;
-    margin-right: 0%;
+ text-align: center;
+  
     color: #555;
     font-size: 24px;
     font-weight: bold;
@@ -674,11 +664,7 @@ footer .footer_bottom .tel:after {
     clear: both;
 }
 footer .footer_bottom .copyright {
-    *zoom: 1;
-    float: left;
-    clear: none;
-    text-align: inherit;
-    width: 33.33333333333333%;
+    text-align: center;
     margin-left: 0%;
     margin-right: 0%;
     color: #666;
