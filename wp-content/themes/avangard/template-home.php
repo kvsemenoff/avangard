@@ -26,8 +26,8 @@ get_header(); ?>
         <div class="container">
             
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 advantage" style="max-width: 100%;">                
-                <h2>Наши преимущества:</h2>
-                <ul>
+                <h2 style="max-width: 300px;">Наши преимущества:</h2>
+                <ul style="max-width: 300px;">
                     <li><span><a href="">Изящество и Комфорт</a></span></li>
                     <li><span><a href="">Натуральный массив</a></span></li>
                     <li><span><a href="">Ортопедические Диваны</a></span></li>
@@ -37,7 +37,7 @@ get_header(); ?>
                 </ul>
             </div>
             
-            <div class="recommended col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="recommended col-xs-12 col-sm-12 col-md-6 col-lg-6"  style="max-width: 300px;">
                 <?php if ( is_active_sidebar( 'latest_news' ) ) : ?>
                 <div class="last-news">
                     <?php dynamic_sidebar( 'latest_news' ); ?>
@@ -51,6 +51,7 @@ get_header(); ?>
             </div>            
         </div>
     </div><!-- content_bottom -->
+
     <script
               src="https://code.jquery.com/jquery-3.1.1.min.js"
               integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -69,9 +70,13 @@ get_header(); ?>
                 if (width < MIN_WIDTH) {
                     $('.advantage').width('90%');
                     $('.recommended').width('90%'); 
+                    $('.advantage').css('margin-left', (width - 300)/2 + 10 + 'px');
+                    $('.recommended').css('margin-left', (width - 300)/2 + 10 + 'px');
                 } else {
                     $('.advantage').width('37%');
                     $('.recommended').width('37%');                    
+                    $('.advantage').css('margin-left', '8%');
+                    $('.recommended').css('margin-left', '8%');
                 }
             }
             setInterval(set_width, 100);
