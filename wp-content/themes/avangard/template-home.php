@@ -19,6 +19,9 @@ get_header(); ?>
         </div>
     </div><!-- content_middle -->
 
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <div class="content_bottom cf">
         <div class="wrap">
             <div class="advantage">
@@ -46,6 +49,30 @@ get_header(); ?>
             </div>
         </div>
     </div><!-- content_bottom -->
+    <script
+              src="https://code.jquery.com/jquery-3.1.1.min.js"
+              integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+              crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            var MIN_WIDTH = 600;
+
+            var set_width = function () {
+                var width = $(window).width();
+
+                if (width < MIN_WIDTH) {
+                    $('.advantage').width('100%');
+                    $('.recommended').width('100%');
+                } else {
+                    $('.advantage').width('37%');
+                    $('.recommended').width('37%');                    
+                }
+            }
+            setInterval(set_width, 100);
+        });
+
+    </script>
 
 <?php
 get_footer();
