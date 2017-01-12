@@ -23,8 +23,9 @@ get_header(); ?>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <div class="content_bottom cf">
-        <div class="wrap">
-            <div class="advantage" style="max-width: 100%;">
+        <div class="container">
+            
+            <div class="advantage" style="max-width: 100%;">                
                 <h2>Наши преимущества:</h2>
                 <ul>
                     <li><span><a href="">Изящество и Комфорт</a></span></li>
@@ -35,6 +36,7 @@ get_header(); ?>
                     <li><span><a href="">Индивидуальный дизайн</a></span></li>
                 </ul>
             </div>
+            
             <div class="recommended">
                 <?php if ( is_active_sidebar( 'latest_news' ) ) : ?>
                 <div class="last-news">
@@ -46,13 +48,16 @@ get_header(); ?>
                     <?php dynamic_sidebar( 'latest_articles' ); ?>
                 </div>
                 <?php endif; ?>
-            </div>
+            </div>            
         </div>
     </div><!-- content_bottom -->
     <script
               src="https://code.jquery.com/jquery-3.1.1.min.js"
               integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
               crossorigin="anonymous"></script>
+
+    <style type="text/css">
+    </style>
 
     <script type="text/javascript">
         $( document ).ready(function() {
@@ -63,17 +68,14 @@ get_header(); ?>
 
                 if (width < MIN_WIDTH) {
                     $('.advantage').width('90%');
-                    $('.recommended').width('90%');
-                    $('.advantage').css('margin-left', 0);
-                    $('.recommended').css('margin-left', 0);
-                    $('.advantage').css('margin-right', '5%');
-                    $('.recommended').css('margin-right', '5%');
+                    $('.recommended').width('90%'); 
                 } else {
                     $('.advantage').width('37%');
                     $('.recommended').width('37%');                    
                 }
             }
             setInterval(set_width, 100);
+
             var flag = true;
             var set_br = function() {
                 var width = $(window).width();                
