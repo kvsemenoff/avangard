@@ -25,11 +25,21 @@
                 </div>
             </div>
         </div>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
         <div class="footer_bottom cf">
             <div class="wrap">
-                <p class="studio">© 2009-2016 Мебельная фабрика Авангард<br>  Поддержка сайта - студия «<a href="https://media-bridge.ru/" target="_blank">Media-Bridge</a>»</p>
-                <p class="tel">+7 (495) 357-13-00</p>
-                <p class="copyright">Копирование, публикация и использование<br> материалов сайта ЗАПРЕЩЕНЫ!</p>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <p class="studio">© 2009-2016 Мебельная фабрика Авангард<br>  Поддержка сайта - студия «<a href="https://media-bridge.ru/" target="_blank">Media-Bridge</a>»</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <p class="tel">+7 (495) 357-13-00</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <p class="copyright">Копирование, публикация и использование<br> материалов сайта ЗАПРЕЩЕНЫ!</p>
+                </div>
             </div>
         </div>
     </footer><!-- #colophon -->
