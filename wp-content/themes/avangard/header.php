@@ -12,23 +12,25 @@
 ?><!DOCTYPE html>
 <html lang="ru-RU">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style3.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style4.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style5.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style2.css">
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style3.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style4.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style5.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style2.css">
+    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<?php wp_head(); ?>
+    <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'avangard' ); ?></a>
+    
 
-	<header id="masthead" class="site-header" role="banner">
+    <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'avangard' ); ?></a>
+
+    <header id="masthead" class="site-header" role="banner">
         <div class="header_top cf">
             <div class="wrap">
                 <div class="links">
@@ -61,18 +63,13 @@
             </div>
         </div>
 
-	</header><!-- #masthead -->
+    </header><!-- #masthead -->
 
     <nav id="site-navigation" class="main-navigation" role="navigation">
         <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'avangard' ); ?></button>
         <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'container' => 'div', 'container_class' => 'row',  ) ); ?>
     </nav><!-- #site-navigation -->
 
-	<section id="content" class="site-content">
+    <section id="content" class="site-content">
 
-<script>
-    $(".it-responsive-mega")click(function(e){
-        e.preventDefault();
-        alert(1);
-    });
-</script>
+     
