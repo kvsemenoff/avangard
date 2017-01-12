@@ -24,7 +24,7 @@ get_header(); ?>
 
     <div class="content_bottom cf">
         <div class="wrap">
-            <div class="advantage">
+            <div class="advantage" style="max-width: 100%;">
                 <h2>Наши преимущества:</h2>
                 <ul>
                     <li><span><a href="">Изящество и Комфорт</a></span></li>
@@ -64,8 +64,8 @@ get_header(); ?>
                 if (width < MIN_WIDTH) {
                     $('.advantage').width('90%');
                     $('.recommended').width('90%');
-                    $('.advantage').css('margin-left', '5%');
-                    $('.recommended').css('margin-left', '5%');
+                    $('.advantage').css('margin-left', 0);
+                    $('.recommended').css('margin-left', 0);
                     $('.advantage').css('margin-right', '5%');
                     $('.recommended').css('margin-right', '5%');
                 } else {
@@ -74,6 +74,20 @@ get_header(); ?>
                 }
             }
             setInterval(set_width, 100);
+            var flag = true;
+            var set_br = function() {
+                var width = $(window).width();                
+                if (width < MIN_WIDTH && flag) {
+                    flag=false;
+                    $(".post-prew_img-wrap").after('<br class="mybr"><br class="mybr"><br class="mybr"><br class="mybr"><br class="mybr"><br class="mybr">');
+                }
+
+                if (width >= MIN_WIDTH && !flag) {
+                    flag=true;
+                    $(".mybr").remove();
+                }
+            }
+            setInterval(set_br, 100);
         });
 
     </script>

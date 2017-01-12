@@ -784,6 +784,8 @@ footer .footer_bottom .copyright:after {
 .home .content_bottom .advantage ul li a:hover {
     color: #e10a17;
 }
+
+
 .home .content_bottom .recommended {
     *zoom: 1;
     float: left;
@@ -863,6 +865,8 @@ footer .footer_bottom .copyright:after {
 .home .content_bottom .recommended .post-prew .post-prew_more:hover {
     text-decoration: none;
 }
+
+
 
 .page .content_top h2 {
     color: #555;
