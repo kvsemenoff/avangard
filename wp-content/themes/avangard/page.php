@@ -1,4 +1,4 @@
-<?php
+            <?php
 /**
  * The template for displaying all pages.
  *
@@ -13,28 +13,34 @@
  */
 
 get_header(); ?>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+
 
 <?php while ( have_posts() ) : the_post(); ?>
 
     <div class="content_top">
-        <div class="wrap">
+        
             <h1 class="entry-title"><?php the_title(); ?></h1>
-        </div><!-- #main -->
-	</div><!-- #primary -->
+        
+    </div><!-- #primary -->
 
     <div class="content_middle">
-        <div class="wrap">
+       
             <?php the_content(); ?>
-        </div><!-- #main -->
+        
     </div><!-- #primary -->
 
     <div class="content_bottom cf">
-        <div class="wrap">
-
-        </div><!-- #main -->
+      
     </div><!-- #primary -->
 
 <?php endwhile; // End of the loop. ?>
 
 <?php
 get_footer();
+?>
+</div>      
+</div>
+</div>

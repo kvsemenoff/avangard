@@ -429,6 +429,7 @@ ul.sub-menu li a > i, ul.submenu-items li a > i {
         -webkit-opacity: 1 !important;
     }
     .it-responsive-mega{
+        cursor:pointer;
         display: block;
         width: 38px;
         clear: both;
