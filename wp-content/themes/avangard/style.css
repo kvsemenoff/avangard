@@ -396,9 +396,12 @@ ul#menu-top > li:hover > a{
 
 
 header .header_top .search {
-    float: right;
+    /*float: right;*/
+    display: inline-block;
     margin-top: 10px;
+    margin-bottom: 16px;
     position: relative;
+
 }
 header .header_top .search input {
     background-color: #fff;
@@ -408,6 +411,7 @@ header .header_top .search input {
     outline: none;
     padding: 0 35px 0 10px;
     width: 210px;
+
 }
 header .header_top .search button[type=submit] {
     position: absolute;
@@ -431,7 +435,7 @@ header .header_top .search button[type=submit]:hover {
 }
 header .header_bottom {
     background-color: #fff;
-    height: 60px;
+    /*height: 60px;*/
     padding-top: 20px;
 }
 header .header_bottom .logo {
@@ -635,10 +639,10 @@ footer .footer_bottom {
 }
 footer .footer_bottom .studio {
 
- text-align: center;
- color: #666;
- font-family: 'Roboto', sans-serif;
- font-size: 12px;
+   text-align: center;
+   color: #666;
+   font-family: 'Roboto', sans-serif;
+   font-size: 12px;
 }
 footer .footer_bottom .studio:before,
 footer .footer_bottom .studio:after {
@@ -653,12 +657,12 @@ footer .footer_bottom .studio a {
     text-decoration: none;
 }
 footer .footer_bottom .tel {
-   text-align: center;
+ text-align: center;
 
-   color: #555;
-   font-size: 24px;
-   font-weight: bold;
-   line-height: 100%;
+ color: #555;
+ font-size: 24px;
+ font-weight: bold;
+ line-height: 100%;
 }
 footer .footer_bottom .tel:before,
 footer .footer_bottom .tel:after {
@@ -2651,13 +2655,20 @@ table.s tr td{
         display: inline-block;
         width: 12.5%;
     }
+    .links{
+        max-width: 600px;
+    }
     header .header_top .links {
-        width: 380px;
+        /*width: 380px;*/
         margin-left: 16.666666666666664%;
         margin-right: 0%;
     }
     ul#menu-top > li > a{
         display: inline-block;
         padding: 0 8px;
+    }
+    header .header_top .search {
+        float: right;
+        display: block;
     }
 }
