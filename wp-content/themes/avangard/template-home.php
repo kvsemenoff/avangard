@@ -25,7 +25,7 @@ get_header(); ?>
     <div class="content_bottom cf">
         <div class="container">
             
-            <div class="advantage" style="max-width: 100%;">                
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 advantage" style="max-width: 100%;">                
                 <h2>Наши преимущества:</h2>
                 <ul>
                     <li><span><a href="">Изящество и Комфорт</a></span></li>
@@ -37,7 +37,7 @@ get_header(); ?>
                 </ul>
             </div>
             
-            <div class="recommended">
+            <div class="recommended col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <?php if ( is_active_sidebar( 'latest_news' ) ) : ?>
                 <div class="last-news">
                     <?php dynamic_sidebar( 'latest_news' ); ?>
