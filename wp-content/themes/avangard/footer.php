@@ -32,7 +32,7 @@
         <div class="footer_bottom cf">
             <div class="wrap">
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                    <p class="studio">© 2009-2016 Мебельная фабрика Авангард<br>  Поддержка сайта - студия «<a href="https://media-bridge.ru/" target="_blank">Media-Bridge</a>»</p>
+                    <p class="studio" style="margin-left: 0;">© 2009-2016 Мебельная фабрика Авангард<br>  Поддержка сайта - студия «<a href="https://media-bridge.ru/" target="_blank">Media-Bridge</a>»</p>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <p class="tel">+7 (495) 357-13-00</p>
