@@ -62,12 +62,12 @@ get_header(); ?>
                 var width = $(window).width();
 
                 if (width < MIN_WIDTH) {
-                    $('.advantage').width('100%');
-                    $('.recommended').width('100%');
+                    $('.advantage').width('90%');
+                    $('.recommended').width('90%');
                     $('.advantage').css('margin-left', '5%');
                     $('.recommended').css('margin-left', '5%');
-                    $('.advantage').css('margin-left', '5%');
-                    $('.recommended').css('margin-left', '5%');
+                    $('.advantage').css('margin-right', '5%');
+                    $('.recommended').css('margin-right', '5%');
                 } else {
                     $('.advantage').width('37%');
                     $('.recommended').width('37%');                    
