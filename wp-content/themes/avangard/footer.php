@@ -131,6 +131,13 @@
 </footer><!-- #colophon -->
 
 <?php wp_footer(); ?>
-
+       <script>
+            $(document).ready(function(){
+                $(".it-responsive-mega").click(function(e){
+                    e.preventDefault();
+                    $(".wr-megamenu-container").slideToggle(500);
+                });
+            });
+        </script>
 </body>
 </html>
