@@ -36,7 +36,32 @@ get_header(); ?>
     $banners = get_posts( $args ); // массив с баннерами с акциями
     ?>
 
-    <table class="s" width="100%" cellspacing="1" cellpadding="1" border="0" align="Left">
+     <?php foreach($banners as $banner){
+            $image_title = $banner->post_title;
+            $banner_content = $banner->post_content;
+            $banner_url = get_post_meta($banner->ID, '_ikcf_target_url', true); // Акции в салоне
+            $attachment_id = get_post_thumbnail_id( $banner->ID );
+            $image = get_the_post_thumbnail( $banner->ID, 'rpwe-thumbnail', array(
+                'title' => $image_title,
+                'alt'   => $image_title
+            ) );
+            ?>
+
+            <div class="banner-item">
+                <div class="banner-item__left" style="vertical-align: top;"><a href="<?php echo $banner_url ?>"><?php echo $image ?></a></div>
+               
+                <div class="banner-item__right">
+                    <?php echo $banner_content ?>
+                </div>
+            </div>
+            
+        <?php } ?>
+
+    <br>
+    <br>
+    <br>
+
+  <!--   <table class="s" width="100%" cellspacing="1" cellpadding="1" border="0" align="Left">
         <tbody>
         <tr><td colspan="3"><hr width="100%" size="1" color="#dddddd"></td></tr>
         <?php foreach($banners as $banner){
@@ -59,7 +84,7 @@ get_header(); ?>
             <tr><td colspan="3"><hr width="100%" size="1" color="#dddddd"></td></tr>
         <?php } ?>
         </tbody>
-    </table>
+    </table> -->
 
     </div>
     <br /><br />

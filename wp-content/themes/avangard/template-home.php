@@ -23,10 +23,11 @@ get_header(); ?>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <div class="content_bottom cf">
-        <div class="wrap">
-            <div class="advantage" style="max-width: 100%;">
-                <h2>Наши преимущества:</h2>
-                <ul>
+        <div class="container">
+        <div class="row">            
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 advantage" style="max-width: 500px;">                
+                <h2 style="max-width: 300px;">Наши преимущества:</h2>
+                <ul style="max-width: 300px;">
                     <li><span><a href="">Изящество и Комфорт</a></span></li>
                     <li><span><a href="">Натуральный массив</a></span></li>
                     <li><span><a href="">Ортопедические Диваны</a></span></li>
@@ -35,7 +36,8 @@ get_header(); ?>
                     <li><span><a href="">Индивидуальный дизайн</a></span></li>
                 </ul>
             </div>
-            <div class="recommended">
+            
+            <div class="recommended col-xs-12 col-sm-12 col-md-6 col-lg-6"  style="max-width: 300px;">
                 <?php if ( is_active_sidebar( 'latest_news' ) ) : ?>
                 <div class="last-news">
                     <?php dynamic_sidebar( 'latest_news' ); ?>
@@ -46,13 +48,18 @@ get_header(); ?>
                     <?php dynamic_sidebar( 'latest_articles' ); ?>
                 </div>
                 <?php endif; ?>
-            </div>
+            </div>            
+        </div>
         </div>
     </div><!-- content_bottom -->
+
     <script
               src="https://code.jquery.com/jquery-3.1.1.min.js"
               integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
               crossorigin="anonymous"></script>
+
+    <style type="text/css">
+    </style>
 
     <script type="text/javascript">
         $( document ).ready(function() {
@@ -63,17 +70,18 @@ get_header(); ?>
 
                 if (width < MIN_WIDTH) {
                     $('.advantage').width('90%');
-                    $('.recommended').width('90%');
-                    $('.advantage').css('margin-left', 0);
-                    $('.recommended').css('margin-left', 0);
-                    $('.advantage').css('margin-right', '5%');
-                    $('.recommended').css('margin-right', '5%');
+                    $('.recommended').width('90%'); 
+                    $('.advantage').css('margin-left', (width - 300)/2 + 10 + 'px');
+                    $('.recommended').css('margin-left', (width - 300)/2 + 10 + 'px');
                 } else {
                     $('.advantage').width('37%');
                     $('.recommended').width('37%');                    
+                    $('.advantage').css('margin-left', '8%');
+                    $('.recommended').css('margin-left', '8%');
                 }
             }
             setInterval(set_width, 100);
+
             var flag = true;
             var set_br = function() {
                 var width = $(window).width();                
