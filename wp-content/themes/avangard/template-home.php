@@ -24,8 +24,8 @@ get_header(); ?>
 
     <div class="content_bottom cf">
         <div class="container">
-            
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 advantage" style="max-width: 100%;">                
+        <div class="row">            
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 advantage" style="max-width: 500px;">                
                 <h2 style="max-width: 300px;">Наши преимущества:</h2>
                 <ul style="max-width: 300px;">
                     <li><span><a href="">Изящество и Комфорт</a></span></li>
@@ -49,6 +49,7 @@ get_header(); ?>
                 </div>
                 <?php endif; ?>
             </div>            
+        </div>
         </div>
     </div><!-- content_bottom -->
 
