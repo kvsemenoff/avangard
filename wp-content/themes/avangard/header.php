@@ -69,3 +69,10 @@
     </nav><!-- #site-navigation -->
 
 	<section id="content" class="site-content">
+
+<script>
+    $(".it-responsive-mega")click(function(e){
+        e.preventDefault();
+        alert(1);
+    });
+</script>

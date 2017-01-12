@@ -9,7 +9,7 @@
  * Technical Support:  Feedback - http://www.woorockets.com
  */
  
-.site {
+ .site {
     overflow: visible;
 }
 .wr-megamenu-container {
@@ -380,8 +380,8 @@ ul.sub-menu li a > i, ul.submenu-items li a > i {
         font-style: normal;
     }
     .wr-megamenu-container a.menu-item-link {
-        margin-right: 42px;
-        width: auto !important;
+        /*margin-right: 42px;*/
+        /*width: auto !important;*/
     }
     .wr-megamenu-container ul.wr-mega-menu ul.sub-menu a {
         color: #ffffff;
@@ -560,4 +560,11 @@ ul.sub-menu li a > i, ul.submenu-items li a > i {
     .wr-megamenu-container ul ul li.focus > ul {
         left: 100%;
     }
+}
+
+@media only screen and (min-width : 992px) {
+ .wr-megamenu-container a.menu-item-link {
+  margin-right: 42px;
+  width: auto !important;
+}
 }
