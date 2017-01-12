@@ -1,0 +1,204 @@
+/** 
+ *  sliderkit-core.css
+ *	> Core CSS styles
+ *  
+ *  This file is part of Slider Kit jQuery plugin.
+ *  http://www.kyrielles.net/sliderkit/
+ *  
+ *  Copyright (c) 2010-2012 Alan Frog
+ *  Licensed under the GNU General Public License
+ *  See <license.txt> or <http://www.gnu.org/licenses/>
+ *
+ */
+
+/*
+ *  PLUGIN BASICS
+ *  ------------------------------------------------
+ */
+.sliderkit{display:none;position:relative;overflow:hidden;text-align:left;}
+.sliderkit a,
+.sliderkit a:hover{text-decoration:none;}
+.sliderkit a:focus{outline:none;}
+.sliderkit img{border:0;}
+
+/*---------------------------------
+ *  Navigation
+ *---------------------------------*/
+.sliderkit .sliderkit-nav{z-index:10;position:absolute;}
+
+/* Nav > Clip */
+.sliderkit .sliderkit-nav-clip{position:relative;overflow:hidden;margin:20px auto;}
+.sliderkit .sliderkit-nav-clip ul{position:relative;left:0;top:0;list-style:none;margin:0;padding:0;}
+.sliderkit .sliderkit-nav-clip ul li{float:left;}
+.sliderkit .sliderkit-nav-clip ul li a{display:block;overflow:hidden;}
+
+/*---------------------------------
+ *  Buttons
+ *---------------------------------*/
+.sliderkit .sliderkit-btn{z-index:10;}
+
+/*---------------------------------
+ *  Panels
+ *---------------------------------*/
+.sliderkit .sliderkit-panel{z-index:1;position:absolute;overflow:hidden;}
+.sliderkit .sliderkit-panel-active{z-index:5;}
+.sliderkit .sliderkit-panel-old{z-index:4;}
+
+/* Panels > Overlay */
+.sliderkit .sliderkit-panel .sliderkit-panel-textbox{position:absolute;z-index:1;}
+.sliderkit .sliderkit-panel .sliderkit-panel-text{position:absolute;z-index:3;top:0;left:0;}
+.sliderkit .sliderkit-panel .sliderkit-panel-overlay{position:absolute;z-index:2;top:0;left:0;}
+
+/*---------------------------------
+ *  Counter
+ *---------------------------------*/
+.sliderkit .sliderkit-count{position:absolute;top:5px;right:5px;z-index:10;padding:5px;color:#fff;background:#000;}
+
+/*---------------------------------
+ *  Loader
+ *---------------------------------*/
+.sliderkit .sliderkit-timer{position:absolute;top:0;left:0;z-index:10;height:3px;background:#ccc;}
+
+
+
+/*---------------------------------
+ *  Photos slider (Главная страница)
+ *---------------------------------*/
+.main-slider {width:100%;height:600px;}
+
+/* Nav */
+.main-slider .sliderkit-nav{position:absolute;bottom:20px;width: 100%;}
+.main-slider .sliderkit-nav-clip ul{margin: auto;}
+.main-slider .sliderkit-nav-clip ul li{float:left;margin:0 2px 0 0;width: 14px;height: 14px;}
+.main-slider .sliderkit-nav-clip ul li a{display:block;padding:6px;color:#fff;border: 1px solid #000; border-radius: 100%;}
+.main-slider .sliderkit-nav-clip ul li.sliderkit-selected a{color:#000;background:#000;}
+/* Buttons */
+.main-slider .sliderkit-btn{position:absolute;top:30px;}
+.main-slider .sliderkit-btn span{display:none;}
+.main-slider .sliderkit-btn-disable{opacity: 0.8 ;cursor:default;}
+.main-slider .sliderkit-btn-disable a:hover{cursor:default;}
+
+/* Panels buttons */
+.main-slider .sliderkit-go-btn{position:absolute;top:0;z-index:10;width:75px;height:600px;}
+.main-slider .sliderkit-go-prev{left:-3px;}
+.main-slider .sliderkit-go-next{right:-2px;}
+.main-slider .sliderkit-go-btn a{display:block;width:75px;height:600px;opacity:0.8;cursor:pointer;-webkit-transition: 0.3s;-moz-transition: 0.3s;-ms-transition: 0.3s;-o-transition: 0.3s;transition: 0.3s;}
+.main-slider .sliderkit-go-btn a:hover {opacity:1;}
+.main-slider .sliderkit-go-prev a{background: rgba(0,0,0,0.0) url("../img/main-slider_prev.png") center no-repeat;}
+.main-slider .sliderkit-go-next a{background: rgba(0,0,0,0.0) url("../img/main-slider_next.png") center no-repeat;}
+.main-slider .sliderkit-btn-disable a{opacity:0.4;cursor:default;}
+.main-slider .sliderkit-go-btn span{display:none;}
+
+/* Panel */
+.main-slider .sliderkit-panel {width:100%;height:600px;}
+.main-slider .sliderkit-panel img {width: 100%;min-width:1400px;-height: 600px;}
+
+/*---------------------------------
+ *  Photos slider (Страница Диллерам)
+ *---------------------------------*/
+.dealers-slider {width:100%;height:585px;}
+
+/* Nav */
+.dealers-slider .sliderkit-nav{position: absolute;bottom: 5px;right: 20px;}
+.dealers-slider .sliderkit-nav-clip{padding-bottom: 10px;}
+.dealers-slider .sliderkit-nav-clip ul{background: #fff;padding: 4px;border-radius: 10px;float: right;}
+.dealers-slider .sliderkit-nav-clip ul li{float:left;margin:0 3px 0 0;width: 12px;height: 12px;}
+.dealers-slider .sliderkit-nav-clip ul li a{display:block;padding:5px;color:#fff;border: 1px solid #000; border-radius: 100%;}
+.dealers-slider .sliderkit-nav-clip ul li.sliderkit-selected a{color:#000;background:#000;}
+/* Buttons */
+.dealers-slider .sliderkit-btn{position:absolute;top:30px;}
+.dealers-slider .sliderkit-btn span{display:none;}
+.dealers-slider .sliderkit-btn-disable{opacity: 0.8 ;cursor:default;}
+.dealers-slider .sliderkit-btn-disable a:hover{cursor:default;}
+
+/* Panels buttons */
+.dealers-slider .sliderkit-go-btn{position:absolute;top:0;z-index:10;width:75px;height:585px;}
+.dealers-slider .sliderkit-go-prev{left:-3px;}
+.dealers-slider .sliderkit-go-next{right:-2px;}
+.dealers-slider .sliderkit-go-btn a{display:block;width:75px;height:585px;opacity:0.8;cursor:pointer;-webkit-transition: 0.3s;-moz-transition: 0.3s;-ms-transition: 0.3s;-o-transition: 0.3s;transition: 0.3s;}
+.dealers-slider .sliderkit-go-btn a:hover {opacity:1;}
+.dealers-slider .sliderkit-go-prev a{background: rgba(0,0,0,0.0) url("../img/main-slider_prev.png") center no-repeat;}
+.dealers-slider .sliderkit-go-next a{background: rgba(0,0,0,0.0) url("../img/main-slider_next.png") center no-repeat;}
+.dealers-slider .sliderkit-btn-disable a{opacity:0.4;cursor:default;}
+.dealers-slider .sliderkit-go-btn span{display:none;}
+
+/* Panel */
+.dealers-slider .sliderkit-panel {width:100%;height:600px;}
+.dealers-slider .sliderkit-panel img {-width: 100%;min-width:1140px;-height: 585px;}
+
+/*---------------------------------
+ *   Photos slider (Карточка товара)
+ *---------------------------------*/
+.thumb-slider {	width:100%;	height:640px; margin: auto; margin-top: 30px;}
+
+/* Navbar */
+.sliderkit .sliderkit-nav{left:0;bottom:0;width:100%;}
+.sliderkit .sliderkit-nav-clip ul li{float:left;padding-left: 0;}
+.sliderkit .sliderkit-nav-clip ul li a img {width: 100%;}
+.sliderkit .sliderkit-nav-clip ul li a{border: 1px solid transparent; display:block;overflow:hidden;margin:0;}
+
+.thumb-slider .sliderkit-nav-clip ul li{margin: 0 15px 0 0;}
+.thumb-slider .sliderkit-nav-clip ul li a {
+    height: 58px;
+}
+.thumb-slider .sliderkit-nav-clip ul li.sliderkit-selected a {
+    opacity: 0.6;
+    overflow: hidden;
+    border: 1px solid #db0c18;
+}
+
+/* Buttons */
+.sliderkit .sliderkit-btn{position:absolute;top: 50%; margin-top: -17.5px;}
+.sliderkit .sliderkit-btn span{display:none;}
+.sliderkit .sliderkit-btn-disable{opacity: 0.1 /* can be set to any value until 1 */ ;cursor:default;}
+.sliderkit .sliderkit-btn-disable a:hover{cursor:default;}
+
+/* Navbar buttons */
+.sliderkit-nav .sliderkit-btn a{opacity: 0.8; display:block;width:35px;height:35px;-webkit-transition: 0.3s;-moz-transition: 0.3s;-ms-transition: 0.3s;-o-transition: 0.3s;transition: 0.3s;}
+.sliderkit-nav .sliderkit-nav-prev{left:0px;}
+.sliderkit-nav .sliderkit-nav-next{right:0px;}
+.sliderkit-nav .sliderkit-nav-prev a{background: url("../img/prev_small.png") center no-repeat;}
+.sliderkit-nav .sliderkit-nav-next a{background: url("../img/next_small.png") center no-repeat;}
+.sliderkit-nav .sliderkit-nav-prev a:hover,
+.sliderkit-nav .sliderkit-nav-prev a:focus{opacity: 1;}
+.sliderkit-nav .sliderkit-nav-next a:hover,
+.sliderkit-nav .sliderkit-nav-next a:focus{opacity: 1;}
+ 
+/* Panels buttons */
+.thumb-slider .sliderkit-go-btn{position:absolute;top:2px;z-index:10;width:30px;height:450px; display: none;}
+.thumb-slider .sliderkit-go-prev{left:-3px;}
+.thumb-slider .sliderkit-go-next{right:-2px;}
+.thumb-slider .sliderkit-go-btn a{display:block;width:30px;height:450px;opacity:0.8;cursor:pointer;-webkit-transition: 0.3s;-moz-transition: 0.3s;-ms-transition: 0.3s;-o-transition: 0.3s;transition: 0.3s;}
+.thumb-slider .sliderkit-go-btn a:hover {opacity:1;}
+.thumb-slider .sliderkit-go-prev a{background: rgba(0,0,0,0.0) url("../img/slider-arrow-left.gif") center no-repeat;}
+.thumb-slider .sliderkit-go-next a{background: rgba(0,0,0,0.0) url("../img/slider-arrow-right.gif") center no-repeat;}
+.thumb-slider .sliderkit-btn-disable a{opacity:0/*can be set to any value until 1*/;cursor:default;}
+.thumb-slider .sliderkit-go-btn span{display:none;}
+
+/* Panel */
+.thumb-slider .sliderkit-panel{top:0;left:0;width:793px;height:538px;-margin-left: 35px; overflow: hidden; border:1px solid #e8e8e8;}
+
+/* Navbar */
+.recent-products {	width:795px;height:260px; margin: auto; margin-top: 30px;}
+.recent-products .sliderkit-nav{left:0;bottom:0;width:100%;}
+.recent-products .sliderkit-nav-clip ul li{float:left;margin:0 15px 0 0;width:300px;height: 260px;padding-left: 0;}
+.recent-products .sliderkit-nav-clip ul li a img {width: 100%;}
+.recent-products .sliderkit-nav-clip ul li a{border: 1px solid transparent; display:block;height:260px;overflow:hidden;margin:0;}
+
+/*---------------------------------
+ *   Photos slider (Карточка товара)
+ *---------------------------------*/
+.salon_images {	width:435px; height:300px; margin: auto;float: right; }
+
+/* Panels buttons */
+.salon_images .sliderkit-go-btn{position:absolute;top:50%;z-index:10;width:50px;height:45px;margin-top: -22px}
+.salon_images .sliderkit-go-prev{left:-12px;}
+.salon_images .sliderkit-go-next{right:-12px;}
+.salon_images .sliderkit-go-btn a{display:block;width:50px;height:45px;opacity:0.6;cursor:pointer;-webkit-transition: 0.3s;-moz-transition: 0.3s;-ms-transition: 0.3s;-o-transition: 0.3s;transition: 0.3s;}
+.salon_images .sliderkit-go-btn a:hover {opacity:1;}
+.salon_images .sliderkit-go-prev a{background: url("../img/prev.png") center no-repeat;}
+.salon_images .sliderkit-go-next a{background: url("../img/next.png") center no-repeat;}
+.salon_images .sliderkit-btn-disable a{opacity:0/*can be set to any value until 1*/;cursor:default;}
+.salon_images .sliderkit-go-btn span{display:none;}
+
+
