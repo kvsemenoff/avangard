@@ -115,9 +115,13 @@
     <?php wp_footer(); ?>
     <script>
         $(document).ready(function(){
-            $(".it-responsive-mega").click(function(e){
+            $(".it-responsive-mega").first().click(function(e){
                 e.preventDefault();
-                $(".wr-megamenu-container").slideToggle(500);
+                $(".wr-megamenu-container").first().slideToggle(500);
+            });
+               $(".it-responsive-mega").last().click(function(e){
+                e.preventDefault();
+                $(".wr-megamenu-container").last().slideToggle(500);
             });
         });
     </script>
