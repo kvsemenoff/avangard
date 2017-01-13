@@ -15,32 +15,32 @@
 get_header(); ?>
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
+    <div class="col-md-12">
+            <div class="db-content">
+                <?php while ( have_posts() ) : the_post(); ?>
 
+                    <div class="content_top">
 
-<?php while ( have_posts() ) : the_post(); ?>
+                        <h1 class="entry-title"><?php the_title(); ?></h1>
 
-    <div class="content_top">
-        
-            <h1 class="entry-title"><?php the_title(); ?></h1>
-        
-    </div><!-- #primary -->
+                    </div><!-- #primary -->
 
-    <div class="content_middle">
-       
-            <?php the_content(); ?>
-        
-    </div><!-- #primary -->
+                    <div class="content_middle">
 
-    <div class="content_bottom cf">
-      
-    </div><!-- #primary -->
+                        <?php the_content(); ?>
 
-<?php endwhile; // End of the loop. ?>
+                    </div><!-- #primary -->
 
-<?php
-get_footer();
-?>
-</div>      
-</div>
+                    <div class="content_bottom cf">
+
+                    </div><!-- #primary -->
+
+                <?php endwhile; // End of the loop. ?>
+
+                <?php
+                get_footer();
+                ?>
+            </div>
+        </div>      
+    </div>
 </div>
