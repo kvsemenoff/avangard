@@ -1,11 +1,30 @@
 
 .footer_top{
+	margin-top: 20px;
 	background:darken(#f5f5f5, 2%) !important;
 	text-align: center;
 }
+.db-content{
+text-align: center;
+}
+.db-contact-img{
+	max-width: 750px;
+	margin: 0 auto;
+	.db-img-responsive{
+		width:100%;
+		height:auto;
+	}
+
+}
 @media only screen and (min-width : 992px) {
 .footer_top{
+	margin-top: 100px;
 	text-align: left;
 
 }
+
+.db-content{
+text-align: left;
+}
+
 }
