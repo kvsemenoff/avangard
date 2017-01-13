@@ -8,8 +8,10 @@
  * Websites: http://www.woorockets.com
  * Technical Support:  Feedback - http://www.woorockets.com
  */
- 
- .site {
+ .wrap{
+    text-align: center;
+}
+.site {
     overflow: visible;
 }
 .wr-megamenu-container {
@@ -121,7 +123,8 @@
 .wr-megamenu-container ul.wr-mega-menu > li {
     height: 100%;
     position: relative;
-    float: left;
+    /*float: left;*/
+    /*margin-left: 20px;*/
     text-align: center;
 }
 .wr-mega-menu > li > a {
@@ -298,12 +301,19 @@ ul.sub-menu li a > i, ul.submenu-items li a > i {
 #wr-menu-toggle{
     display: none !important;
 }
-.it-responsive-mega{
-    display: none;
-}
+
 .wr-mega-menu .wr-menu-down{
     display:none;
 }
+    .it-responsive-mega{
+        cursor:pointer;
+        display: block;
+        width: 38px;
+        clear: both;
+        height: 38px;
+        background: rgba(204, 204, 204, 0.5) url(../images/icon-menu.svg) center no-repeat;
+    }
+
 
 @media only screen and (max-width: 783px) {
     .wr-megamenu-container ul li {
@@ -428,14 +438,7 @@ ul.sub-menu li a > i, ul.submenu-items li a > i {
         -moz-opacity: 1 !important;
         -webkit-opacity: 1 !important;
     }
-    .it-responsive-mega{
-        cursor:pointer;
-        display: block;
-        width: 38px;
-        clear: both;
-        height: 38px;
-        background: rgba(204, 204, 204, 0.5) url(../images/icon-menu.svg) center no-repeat;
-    }
+
     .it-responsive-mega .glyphicon{
         font-size: 18px;
         color: #333;
@@ -498,13 +501,16 @@ ul.sub-menu li a > i, ul.submenu-items li a > i {
         -webkit-overflow-scrolling: touch;
         -webkit-overflow-scrolling: touch;
     }
+
 }
 
 @media only screen and (max-width: 768px), (max-device-width: 768px) {
+
     .row [class*="col-md-"] {
         width: 100%;
         margin: 0;
     }
+
 }
 #wr-megamenu-menu-2 > li.menu-item.menu-item-type-post_type.menu-item-object-page.wr-megamenu-item.level-0.mega-item > div > div > div > ul.col-1 > li.row-1
 @media screen and (min-width: 783px) {
@@ -561,11 +567,30 @@ ul.sub-menu li a > i, ul.submenu-items li a > i {
     .wr-megamenu-container ul ul li.focus > ul {
         left: 100%;
     }
+
 }
 
 @media only screen and (min-width : 992px) {
- .wr-megamenu-container a.menu-item-link {
-  margin-right: 42px;
-  width: auto !important;
-}
+    .wr-megamenu-container ul.wr-mega-menu > li {
+        margin-left: 0px;
+    }
+    .it-responsive-mega{
+        display: none;
+    }
+    .wr-megamenu-container a.menu-item-link {
+      margin-right: 42px;
+      width: auto !important;
+  }
+/*  .wr-megamenu-container ul.wr-mega-menu > li {
+    margin-left: 20px;
+    }*/
+/*.wr-megamenu-container ul.wr-mega-menu > li{
+    margin-left: 0;
+    }*/
+    .wr-megamenu-container ul.wr-mega-menu > li {
+
+        float: left;
+        /*margin-left: 20px;*/
+
+    }
 }
