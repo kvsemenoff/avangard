@@ -57,7 +57,6 @@ get_header(); ?>
             if($product_objects){
                 echo '<p class="title">'.$collection_name.'</p>';
                 echo '<ul class="cf items-list">';
-                echo '<div class="container">';
 
                 foreach($product_objects as $single_product){
                     $extended = new WC_Product_Factory();  // создаём новый товар
@@ -144,20 +143,18 @@ get_header(); ?>
                             'alt'	=> $image_title
                         ) );
                     } else {
-                        $image = apply_filters( 'woocommerce_single_product_image_html', sprintf( '<img width="370px" height="250px" src="%s" alt="%s" />', wc_placeholder_img_src(), __( 'Placeholder', 'woocommerce' ) ), $product_id );
+                        $image = apply_filters( 'woocommerce_single_product_image_html', sprintf( '<img width="370" height="250" src="%s" alt="%s" />', wc_placeholder_img_src(), __( 'Placeholder', 'woocommerce' ) ), $product_id );
                     }
 
                     ?>
                     <li>
                         <div class="item_wrap">
-                            <div class="row">
-                            <div class="">
                             <a href="<?php echo $product_link ?>" title="<?php echo $product_title ?>">
                                 <?php echo $image ?>
                                 <span class="cf">
                             <p class="left"><?php echo $product_title ?></p>
                             <p class="right"><?php echo $min_price_html ?></p>
-                        </span>                        
+                        </span>
                             </a>
                             <table>
                                 <tbody>
@@ -179,11 +176,9 @@ get_header(); ?>
                                 </tbody>
                             </table>
                         </div>
-                        </div>
-                        </div>
                     </li>
                 <?php   }
-                echo '</div>';
+
                 echo '</ul>';
 
             }
