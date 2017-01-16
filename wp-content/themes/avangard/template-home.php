@@ -37,7 +37,7 @@ get_header(); ?>
                 </ul>
             </div>
             
-            <div class="recommended col-xs-12 col-sm-12 col-md-6 col-lg-6"  style="max-width: 300px; margin-left: 0px;">
+            <div class="recommended col-xs-12 col-sm-12 col-md-6 col-lg-6"  style="margin-left: 0px;">
                 <?php if ( is_active_sidebar( 'latest_news' ) ) : ?>
                 <div class="last-news">
                     <?php dynamic_sidebar( 'latest_news' ); ?>
@@ -67,18 +67,17 @@ get_header(); ?>
 
             var set_width = function () {
                 var width = $(window).width();
-
+console.log($(".content_bottom").width());
                 if (width < MIN_WIDTH) {
-
-                    $('.advantage').width('90%');
-                    $('.recommended').width('90%'); 
-                    $('.advantage').css('margin-left', (width - 300)/2 + 10 + 'px');
-                    $('.recommended').css('margin-left', (width - 300)/2 + 10 + 'px');
+                    $('.advantage').width(250 + 'px');
+                    $('.recommended').width(250 + 'px'); 
+                    $('.advantage').css('margin-left', (width - 400)/2 + 10 + 'px');
+                    $('.recommended').css('margin-left', (width - 400)/2 + 10 + 'px');
                 } else {
                     $('.advantage').width('37%');
                     $('.recommended').width('37%');                    
                     $('.advantage').css('margin-left', '8%');
-                    $('.recommended').css('margin-left', '8%');
+                    $('.recommended').css('margin-left', '22%');
                 }
             }
             setInterval(set_width, 100);
@@ -96,7 +95,7 @@ get_header(); ?>
                     $(".mybr").remove();
                 }
             }
-            setInterval(set_br, 100);
+            setInterval(set_br, 500);
         });
 
     </script>

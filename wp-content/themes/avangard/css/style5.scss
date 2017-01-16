@@ -33,21 +33,78 @@
 	vertical-align: middle;
 	width: 100%;
 	text-align: center;
+	margin-bottom: 15px;
 }
 
+
+.content_middle ul.items-list li{
+	width: 100%;
+	max-width: 345px;
+}
+
+	/*search*/
+	.df-wrap{
+		text-align: center;
+	}
+
+	/*dilers*/
+	#earn .child-wrap img{
+		float: none !important;
+	}
+
+	.parent-item-1 .child-wrap{
+		margin: 10px auto !important;
+		max-width: 300px;
+		padding-left: 0px !important;
+	}
+
+	.parent-item-3 .child-wrap img{
+		display: inline-block;
+		margin-bottom: 10px;
+		padding-left: 0px !important;
+	}
+	.video-list li{
+		float: none !important;
+		margin: 0 auto !important;
+		margin-bottom: 15px !important;
+		max-width: 420px;
+		width: 100%;
+		display: inline-block;
+	}
+
+	iframe[width]{
+		width: 100%;			
+	}
+
+	#tissue ul.child li{	    
+	    max-width: 370px;	    
+	    width: 100% !important;
+	    display: inline-block;
+	}	
+	.video-wrap{
+		max-width:420px !important;		
+	}
+	
+	#warehouses, #tissue, #manuals, #terms, #earn{
+		padding: 20px 0 !important;
+	}
+
 @media only screen and (min-width : 992px) {
+	.wrap{
+		text-align: left !important;
+	}
+
+	/*akzii*/
 	.content_top h1{
 		text-align: left;
 	}
 	.banner-item{
-		display: table;
-		
+		display: table;		
 	}
 	.banner-item__left{
 		width: 230px;
 		height: 115px;
-		display: inline-block;
-		margin-right: 35px;
+		display: inline-block;		
 		margin: 20px 35px 20px 0;		
 	}
 	.banner-item__right{
@@ -55,5 +112,47 @@
 		padding: 0px 20px;		
 		width: 100%;
 		text-align: left;
+		margin-bottom: 0px;
 	}
+
+	/*search*/
+	.df-wrap{
+		text-align: left !important;
+	}
+
+	/*dilers*/
+	#earn .child-wrap img{
+		float: left;
+	}
+	#warehouses, #tissue, #manuals, #terms, #earn{
+		padding: 60px 0 !important;
+	}
+	.parent-item-1 .child-wrap{
+		margin: unset;
+		max-width: unset;
+		padding-left: 30px;
+	}
+	.parent-item-3 .child-wrap img{
+		display: inline-block;
+		margin-bottom: 10px;
+		padding-left: 30px;
+	}
+	.video-list li{
+		float: none !important;
+		margin: 0 auto;
+		margin-bottom: 15px !important;
+		max-width: 420px;
+		display: inline-block;
+	}
+	.manuals ul.child {	    
+	    padding-left:30px;
+	}
+	#tissue ul.child li{  
+	    max-width: 360px;	    
+	    width: 100% !important;	   
+	}
+	ul.video-list li:nth-of-type(2n+1) {
+    	margin-right: 30px !important;
+	}
+
 }
