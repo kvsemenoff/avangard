@@ -71,8 +71,8 @@ get_header(); ?>
                 if (width < MIN_WIDTH) {
                     $('.advantage').width('90%');
                     $('.recommended').width('90%'); 
-                    $('.advantage').css('margin-left', (width - 300)/2 + 10 + 'px');
-                    $('.recommended').css('margin-left', (width - 300)/2 + 10 + 'px');
+                    $('.advantage').css('margin-left', (width - 400)/2 + 10 + 'px');
+                    $('.recommended').css('margin-left', (width - 400)/2 + 10 + 'px');
                 } else {
                     $('.advantage').width('37%');
                     $('.recommended').width('37%');                    
