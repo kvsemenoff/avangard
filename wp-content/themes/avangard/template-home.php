@@ -67,10 +67,10 @@ get_header(); ?>
 
             var set_width = function () {
                 var width = $(window).width();
-
+console.log($(".content_bottom").width());
                 if (width < MIN_WIDTH) {
-                    $('.advantage').width('90%');
-                    $('.recommended').width('90%'); 
+                    $('.advantage').width(250 + 'px');
+                    $('.recommended').width(250 + 'px'); 
                     $('.advantage').css('margin-left', (width - 400)/2 + 10 + 'px');
                     $('.recommended').css('margin-left', (width - 400)/2 + 10 + 'px');
                 } else {
