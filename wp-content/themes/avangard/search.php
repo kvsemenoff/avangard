@@ -16,7 +16,7 @@ get_header(); ?>
     </div>
 
     <div class="content_middle">
-        <div class="wrap">
+        <div class="wrap df-wrap">
 
             <?php
             if ( have_posts() ) : ?>
