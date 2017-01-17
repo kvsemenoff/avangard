@@ -942,6 +942,7 @@ footer .footer_bottom .copyright:after {
     -ms-transition: 0.3s;
     transition: 0.3s;
     width: 100%;
+    height: auto;
     border: 1px solid #e8e8e8;
 }
 .page .content_middle div.container div.item_wrap span .left {
@@ -950,6 +951,7 @@ footer .footer_bottom .copyright:after {
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     width: 200px;
+    text-align: center;
 }
 .page .content_middle div.container div.item_wrap table {
     visibility: hidden;

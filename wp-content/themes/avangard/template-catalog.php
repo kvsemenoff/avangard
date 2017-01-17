@@ -155,7 +155,7 @@ get_header(); ?>
                                 <?php echo $image ?>
                                 <span class="cf">
                             <p class="left"><?php echo $product_title ?></p>
-                            <p class="right"><?php echo $min_price_html ?></p>
+                            <p class="left"><?php echo $min_price_html ?></p>
                         </span>
                             </a>
                             <table>
