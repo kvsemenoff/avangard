@@ -950,8 +950,13 @@ footer .footer_bottom .copyright:after {
     white-space: nowrap;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
-    width: 200px;
+    width: 100%;
     text-align: center;
+}
+@media screen and (max-width: 600px) {
+    .page .content_middle div.container div.item_wrap span .left {
+        font-size: 12px;
+    }
 }
 .page .content_middle div.container div.item_wrap table {
     visibility: hidden;
