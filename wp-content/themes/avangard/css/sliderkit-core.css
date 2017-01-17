@@ -176,7 +176,7 @@
 .thumb-slider .sliderkit-go-btn span{display:none;}
 
 /* Panel */
-.thumb-slider .sliderkit-panel{top:0;left:0;width:793px;height:538px;-margin-left: 35px; overflow: hidden; border:1px solid #e8e8e8;}
+.thumb-slider .sliderkit-panel{top:0;left:0;width:100%;height:538px;-margin-left: 35px; border:1px solid #e8e8e8;}
 
 /* Navbar */
 .recent-products {	width:795px;height:260px; margin: auto; margin-top: 30px;}
