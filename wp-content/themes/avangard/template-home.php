@@ -67,7 +67,7 @@ get_header(); ?>
 
             var set_width = function () {
                 var width = $(window).width();
-console.log($(".content_bottom").width());
+
                 if (width < MIN_WIDTH) {
                     $('.advantage').width(250 + 'px');
                     $('.recommended').width(250 + 'px'); 

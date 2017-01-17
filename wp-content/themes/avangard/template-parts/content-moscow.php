@@ -133,17 +133,33 @@ foreach ( $salons_list as $salons_block ) {
         uasort($salons_block['salons'], 'sort_by_category_name'); ?>
 
     <p class="title <?php echo $salons_block['slug']; ?>"><?php echo $salons_block['name']; ?></p>
-    <table>
-        <tbody>
+
+<script
+              src="https://code.jquery.com/jquery-2.2.4.min.js"
+              integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+              crossorigin="anonymous"></script>
+              
+        <script type="text/javascript">
+           $( document ).ready(function() {
+               $('.for_hover').hover(function() {
+                   $( this ).css("color", "red");
+               }, function() {
+                   $( this ).css("color", "#333333");
+               });
+        });
+    </script>
+
+    <div class="container">
     <?php foreach ( $salons_block['salons'] as $salon_params ) { ?>
-            <tr>
-                <td class="col-1 <?php echo $salon_params['metro_city']; ?>"><?php echo $salon_params['category_name']; ?></td>
-                <td class="col-2"><a href="<?php echo $salon_params['salon_link']; ?>"><?php echo $salon_params['salon_title']; ?></a></td>
-                <td class="col-3"><?php echo $salon_params['salon_address']; ?></td>
-            </tr>
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 <?php echo $salon_params['metro_city']; ?>">&nbsp&nbsp&nbsp&nbsp<?php echo $salon_params['category_name']; ?></div>
+                <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                    <a class="for_hover" style="color: #333333;" href="<?php echo $salon_params['salon_link']; ?>"><?php echo $salon_params['salon_title']; ?></a>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12"><?php echo $salon_params['salon_address']; ?></div>
+            </div>
     <?php } ?>
-        </tbody>
-    </table>
+        </div>
     <?php } ?>
 <?php } ?>
     </div>

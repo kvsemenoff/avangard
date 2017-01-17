@@ -48,6 +48,9 @@
 	}
 
 	/*dilers*/
+	.child-wrap{
+		padding-left: 0!important;
+	}
 	#earn .child-wrap img{
 		float: none !important;
 	}
@@ -88,7 +91,41 @@
 	#warehouses, #tissue, #manuals, #terms, #earn{
 		padding: 20px 0 !important;
 	}
+	
+	#table-df{
+		clear: both;
+		text-align: center;
+	}
+	#table-df div:first-child{		
+		max-width: 285px;
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+		// float: left;
+		margin-bottom: 10px;
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+	.opto{		
+		display: block;
+		max-width:550px;
+		width: 100%;
+		text-align: center; 
+		// float: left;
+		margin: 0 0 4px 15px;
+		span{
+			color: #333;
+		    font-family: 'Roboto', sans-serif;
+		    font-size: 16px;
+		    font-weight: bold;
+		}
 
+	}
+	.parent-item-4{
+		clear: both;
+	}
 @media only screen and (min-width : 992px) {
 	.wrap{
 		text-align: left !important;
@@ -121,6 +158,9 @@
 	}
 
 	/*dilers*/
+	.child-wrap{
+		padding-left: 30px;
+	}
 	#earn .child-wrap img{
 		float: left;
 	}
@@ -153,6 +193,20 @@
 	}
 	ul.video-list li:nth-of-type(2n+1) {
     	margin-right: 30px !important;
+	}
+	#table-df div:first-child{		
+		width: 285px;
+		display: inline-block;
+		float: left;
+		margin-bottom: 10px;
+	}
+	.opto{		
+		display: inline-block;
+		max-width:550px;
+		width: 100%;
+		text-align: left;  
+		float: left;
+		margin: 0 0 4px 15px;
 	}
 
 }
