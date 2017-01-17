@@ -1698,8 +1698,12 @@ footer .footer_bottom .copyright:after {
 }
 .tax-product_cat .content_middle ul li table {
     visibility: hidden;
-    width: 100%;
     margin-top: 15px;
+    display: block;
+    overflow-x: auto;
+}
+.borderless {
+    border:0px !important;
 }
 .tax-product_cat .content_middle ul li table tr {
     height: 20px;

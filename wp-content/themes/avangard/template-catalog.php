@@ -158,8 +158,8 @@ get_header(); ?>
                             <p class="left"><?php echo $min_price_html ?></p>
                         </span>
                             </a>  
-                            <center>                          
-                            <table>
+                            <center> 
+                            <table class="table-responsive borderless">
                                 <tbody>
                                 <tr class="row-1">
                                     <td class="col-1">Комплектность</td>
