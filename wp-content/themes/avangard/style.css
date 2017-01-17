@@ -961,6 +961,7 @@ footer .footer_bottom .copyright:after {
 .page .content_middle div.container div.item_wrap table {
     visibility: hidden;
     width: 100%;
+    display: block;
     margin-top: 15px;
 }
 .page .content_middle div.container div.item_wrap table tr {

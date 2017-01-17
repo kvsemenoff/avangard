@@ -157,8 +157,8 @@ get_header(); ?>
                             <p class="left"><?php echo $product_title ?></p>
                             <p class="left"><?php echo $min_price_html ?></p>
                         </span>
-                            </a>
-                            <table>
+                            </a>                            
+                            <table class="table-responsive">
                                 <tbody>
                                 <tr class="row-1">
                                     <td class="col-1">Комплектность</td>
@@ -177,6 +177,7 @@ get_header(); ?>
                                 ?>
                                 </tbody>
                             </table>
+                            
                         </div>
                         </div>
 
