@@ -16,7 +16,7 @@ get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
     <div class="content_top">
-        <h1 class="entry-title"><?php the_title(); ?></h1>
+        <h1 class="entry-title "><?php the_title(); ?></h1>
     </div>
     <div class="content_middle">
         <?php
@@ -56,9 +56,10 @@ get_header(); ?>
 
             if($product_objects){
                 echo '<p class="title">'.$collection_name.'</p>';
-                echo '<div class="container cf items-list">';
+                echo '<div class="container">';
                 echo '<div class="row">';
-
+                
+                $i = 0;
                 foreach($product_objects as $single_product){
                     $extended = new WC_Product_Factory();  // создаём новый товар
                     $product = $extended->get_product($single_product->ID);
@@ -177,16 +178,20 @@ get_header(); ?>
                                 </tbody>
                             </table>
                         </div>
-                        </div>                        
+                        </div>
 
-                <?php   }
+                <?php $i++; if ($i % 3 == 0) echo '<div class="clearfix"></div>'; }
 
                 echo '</div>';
                 echo '</div>';
-
+             
             }
         }
-        ?>                            
+        ?>   
+        <script
+              src="https://code.jquery.com/jquery-2.2.4.min.js"
+              integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+              crossorigin="anonymous"></script>
 
     </div>
 <?php
