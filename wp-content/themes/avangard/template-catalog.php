@@ -16,7 +16,7 @@ get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
     <div class="content_top">
-        <h1 class="entry-title"><?php the_title(); ?></h1>
+        <h1 class="entry-title "><?php the_title(); ?></h1>
     </div>
     <div class="content_middle">
         <?php
@@ -56,9 +56,10 @@ get_header(); ?>
 
             if($product_objects){
                 echo '<p class="title">'.$collection_name.'</p>';
-                echo '<ul class="cf items-list">';
                 echo '<div class="container">';
-
+                echo '<div class="row">';
+                
+                $i = 0;
                 foreach($product_objects as $single_product){
                     $extended = new WC_Product_Factory();  // создаём новый товар
                     $product = $extended->get_product($single_product->ID);
@@ -144,22 +145,21 @@ get_header(); ?>
                             'alt'	=> $image_title
                         ) );
                     } else {
-                        $image = apply_filters( 'woocommerce_single_product_image_html', sprintf( '<img width="370px" height="250px" src="%s" alt="%s" />', wc_placeholder_img_src(), __( 'Placeholder', 'woocommerce' ) ), $product_id );
+                        $image = apply_filters( 'woocommerce_single_product_image_html', sprintf( '<img width="370" height="250" src="%s" alt="%s" />', wc_placeholder_img_src(), __( 'Placeholder', 'woocommerce' ) ), $product_id );
                     }
 
                     ?>
-                    <li>
+                        <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
                         <div class="item_wrap">
-                            <div class="row">
-                            <div class="">
                             <a href="<?php echo $product_link ?>" title="<?php echo $product_title ?>">
                                 <?php echo $image ?>
                                 <span class="cf">
                             <p class="left"><?php echo $product_title ?></p>
-                            <p class="right"><?php echo $min_price_html ?></p>
-                        </span>                        
-                            </a>
-                            <table>
+                            <p class="left"><?php echo $min_price_html ?></p>
+                        </span>
+                            </a>  
+                            <center> 
+                            <table class="table-responsive borderless">
                                 <tbody>
                                 <tr class="row-1">
                                     <td class="col-1">Комплектность</td>
@@ -178,17 +178,23 @@ get_header(); ?>
                                 ?>
                                 </tbody>
                             </table>
+                            </center>                            
                         </div>
                         </div>
-                        </div>
-                    </li>
-                <?php   }
-                echo '</div>';
-                echo '</ul>';
 
+                <?php $i++; if ($i % 3 == 0) echo '<div class="clearfix"></div>'; }
+
+                echo '</div>';
+                echo '</div>';
+             
             }
         }
-        ?>
+        ?>   
+        <script
+              src="https://code.jquery.com/jquery-2.2.4.min.js"
+              integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+              crossorigin="anonymous"></script>
+
     </div>
 <?php
 endwhile; // End of the loop.
