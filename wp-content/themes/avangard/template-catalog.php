@@ -56,7 +56,8 @@ get_header(); ?>
 
             if($product_objects){
                 echo '<p class="title">'.$collection_name.'</p>';
-                echo '<ul class="cf items-list">';
+                echo '<div class="container cf items-list">';
+                echo '<div class="row">';
 
                 foreach($product_objects as $single_product){
                     $extended = new WC_Product_Factory();  // создаём новый товар
@@ -147,7 +148,7 @@ get_header(); ?>
                     }
 
                     ?>
-                    <li>
+                        <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
                         <div class="item_wrap">
                             <a href="<?php echo $product_link ?>" title="<?php echo $product_title ?>">
                                 <?php echo $image ?>
@@ -176,14 +177,17 @@ get_header(); ?>
                                 </tbody>
                             </table>
                         </div>
-                    </li>
+                        </div>
+
                 <?php   }
 
-                echo '</ul>';
+                echo '</div>';
+                echo '</div>';
 
             }
         }
-        ?>
+        ?>                            
+
     </div>
 <?php
 endwhile; // End of the loop.
