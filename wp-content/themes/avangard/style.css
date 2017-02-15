@@ -2312,8 +2312,10 @@ footer .footer_bottom .copyright:after {
 }
 .single-product .col-left .content_middle .tab-content .sizes table tr td {
     vertical-align: middle;
-    text-align: center;
+    text-align: left;
+    padding-left: 25px;
     border: 1px solid #e8e8e8;
+    display: block;
 }
 .single-product .col-left .content_middle .tab-content .sizes table tr td.col-1 {
     text-align: left;
@@ -2773,6 +2775,17 @@ table.s tr td{
     text-decoration:unset; 
 }
 .page-numbers{
+    
+}
+
+@media only screen and (min-width :480px) {
+    .single-product .col-left .content_middle .tab-content .sizes table tr td {
+        vertical-align: middle;
+        text-align: center;
+        border: 1px solid #e8e8e8;
+        display: table-cell;
+        padding-left: 0px;
+    }
     
 }
 
