@@ -19,7 +19,7 @@
 .sliderkit a,
 .sliderkit a:hover{text-decoration:none;}
 .sliderkit a:focus{outline:none;}
-.sliderkit img{border:0;}
+.sliderkit img{border:0; width: 100%; height: auto;}
 
 /*---------------------------------
  *  Navigation
@@ -27,7 +27,7 @@
 .sliderkit .sliderkit-nav{z-index:10;position:absolute;}
 
 /* Nav > Clip */
-.sliderkit .sliderkit-nav-clip{position:relative;overflow:hidden;margin:20px auto;}
+.sliderkit .sliderkit-nav-clip{position:relative;overflow:hidden;margin:20px auto; max-width: 720px; width: 100% !important;}
 .sliderkit .sliderkit-nav-clip ul{position:relative;left:0;top:0;list-style:none;margin:0;padding:0;}
 .sliderkit .sliderkit-nav-clip ul li{float:left;}
 .sliderkit .sliderkit-nav-clip ul li a{display:block;overflow:hidden;}
@@ -129,7 +129,7 @@
 /*---------------------------------
  *   Photos slider (Карточка товара)
  *---------------------------------*/
-.thumb-slider {	width:100%;	height:640px; margin: auto; margin-top: 30px;}
+.thumb-slider {	width:100%;	height:320px;  margin: auto; margin-top: 30px;}
 
 /* Navbar */
 .sliderkit .sliderkit-nav{left:0;bottom:0;width:100%;}
@@ -176,8 +176,8 @@
 .thumb-slider .sliderkit-go-btn span{display:none;}
 
 /* Panel */
-.thumb-slider .sliderkit-panel{top:0;left:0;width:100%;height:538px;-margin-left: 35px; border:1px solid #e8e8e8;}
-
+.thumb-slider .sliderkit-panel{top:0;left:0;max-width:723px; width: 100%; margin: 0 auto; border:1px solid #e8e8e8;}
+// height:538px;
 /* Navbar */
 .recent-products {	width:795px;height:260px; margin: auto; margin-top: 30px;}
 .recent-products .sliderkit-nav{left:0;bottom:0;width:100%;}
@@ -201,4 +201,17 @@
 .salon_images .sliderkit-btn-disable a{opacity:0/*can be set to any value until 1*/;cursor:default;}
 .salon_images .sliderkit-go-btn span{display:none;}
 
+@media only screen and (min-width : 320px) {
+	.thumb-slider {	height:320px;}
+}
+@media only screen and (min-width : 480px) {
+	.thumb-slider {	height:480px;}
+}
+@media only screen and (min-width : 770px) {
+	.thumb-slider {	height:590px;}
+}
 
+@media only screen and (min-width : 992px) {
+	.thumb-slider {	height:640px;}
+	// .thumb-slider .sliderkit-panel{ margin-left: 35px; }
+}
